@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>MusicDB</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/callAPI.js"></script>
+    </head>
+    <body>
+    <header>
+        <div>
+            <p id='username_logout'></p>
+            <button id='logout_button' onclick='logout()'>Logout</button>
+        </div>
+            <p>MusicDB</p>
+            
+    </header>
+    <section id="create">
+        <form autocomplete="off">
+            <div>
+                <p>
+                    <label for="inputTitle">Title:</label><input id="inputTitle" type="text" name="title" required spellcheck="false">
+                </p>
+                <p>
+                    <label for="inputArtist">Artist:</label><input id="inputArtist" type="text" name="artist" required spellcheck="false">
+                </p>
+            </div>
+            <button id='addSong' onclick="sendSong()">+</button>
+        </form>
+    </section>
+    <div id="content">
+        
+    </div>
+    <!-- opcional
+    <footer>
+        <hr>
+        <p>Desenvolvido por: Guilherme Vaz</p>
+    </footer> --> 
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>MusicDB - Login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        <script src="js/login.js"></script>
+        <script type="text/javascript" src="js/callAPI.js"></script>
+    </head>
+    <body>
+            <section id="login">
+                <p id="title">MusicDB</p>
+                <form autocomplete="off">
+                        <p>
+                            <label for="inputUsername">Username:</label><input id="inputUsername" type="text" required spellcheck="false">
+                        </p>
+                        <p>
+                            <label for="inputPassword">Password:</label><input id="inputPassword" type="password" required spellcheck="false">
+                        </p>
+                    
+                    <button id='inputLogin' onclick='login()'>Login</button>
+                </form>
+            </section>
+    
+    </body>
+</html>

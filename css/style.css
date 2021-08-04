@@ -1,0 +1,216 @@
+:root{
+    --orange: #FE5D26;
+    --black: #251B1B;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
+html{ 
+    margin: 50px;
+    height: 100%;
+}
+*{
+    font-family: 'Ramabhadra', sans-serif;
+    color: var(--orange);
+    font-weight: bold;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+body{
+    background-color: var(--black);
+    margin: auto;
+}
+#username_logout{
+    font-size: 1.25em;
+    padding: 5px;
+    margin-right: 10px;
+}
+#logout_button{
+    font-size: 1.25em;
+    background-color: var(--black);
+    color: var(--orange);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--orange); 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    font-size: 1em;
+    padding: 5px;
+}
+header div{
+    display: flex;
+    justify-content: flex-end;
+}
+header p{
+    font-size: 5em;   
+    left: 70px;
+    top: 50px;
+    margin: 0px;      
+}
+
+form{
+    margin: 0px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+input[type=text] {
+    margin: 5px;
+    border: 3px solid var(--orange);
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: var(--black);
+}
+#addSong{
+    font-size: 4em;
+    height: 100px;
+    width: 100px;
+}
+.deleteSong{
+    font-size: 1.05em;
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    padding-bottom: 2.5px;
+}
+.updateSong{
+    font-size: 0.92em;
+    float: right;
+    display: flex;
+    align-items: center; 
+    margin-right: 5px;
+    width: 27px;
+    height: 27px;
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+input:focus{
+    outline: 0px solid transparent;
+}
+.buttons{
+    position: relative;
+    left: -15px;
+    top: -38px;
+}
+button{
+    background-color: var(--black);
+    color: var(--orange);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--orange); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+button:active {
+  box-shadow: 0 2px var(--orange);
+  transform: translateY(5px);
+}
+button:focus{
+    outline: 0px solid transparent;
+}
+#content0{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    margin-top: 0px;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#content div{
+    margin-top: 0px;
+    margin: 20px;
+    margin-bottom: 100px;
+    height: 375px;
+     
+}
+
+/* Sombra opcional
+#content img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+*/
+#content p{
+    margin: 15px;
+}
+.title{
+    font-size: 1.5em;
+}
+/*
+footer p{
+    padding: 15px;
+    text-align: right;
+    font-style: italic;
+}
+hr{
+    height: 2px;
+    border-width: 0px;
+    background-color: #FE5D26;
+    color: #FE5D26;
+}
+*/
+@media only screen and (max-width:900px){
+    
+    header p{
+        font-size: 4em;
+    }
+    form{
+        display: inline;
+       
+        
+    }
+    form div{
+        display: inline;
+        
+    }
+    
+}
+@media only screen and (max-width:600px){
+    html{
+        margin: 20px;
+    }
+    header p{
+        font-size: 4em;
+    }
+    header div{
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    #logout_button{
+        font-size: 1.5em;
+    }
+    #username_logout{
+        font-size: 1.5em; 
+    }
+    form{
+        display: inline;   
+    }
+    form div{
+        display: inline;
+        
+    }
+    #inputTitle{
+        margin-left: 5px;
+    }
+    
+}   
